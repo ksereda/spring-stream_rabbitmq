@@ -1,6 +1,6 @@
-package com.ignaciosuay.integration;
+package com.example.subscriber.integration;
 
-import com.ignaciosuay.message.InputChannel;
+import com.example.subscriber.message.InputChannel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -10,9 +10,13 @@ import org.springframework.cloud.stream.messaging.Sink;
 @EnableBinding(InputChannel.class)
 public class MessageHandler {
 
+
     @StreamListener(Sink.INPUT)
     public void handle(String message) {
+
         log.info("message received {}", message);
         System.out.println(message);
+
     }
+
 }

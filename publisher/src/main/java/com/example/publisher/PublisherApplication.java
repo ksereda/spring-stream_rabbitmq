@@ -1,6 +1,6 @@
-package com.ignaciosuay;
+package com.example.publisher;
 
-import com.ignaciosuay.message.OutputChannel;
+import com.example.publisher.message.OutputChannel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
@@ -12,4 +12,5 @@ public class PublisherApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PublisherApplication.class, args);
 	}
+
 }

@@ -6,7 +6,7 @@ services:
     image: portainer/portainer
     container_name: portainer
     ports:
-      - "9999:9000"
+      - "9000:9000"
     environment:
       - JAVA_OPTS=-Xmx100m
     volumes:
